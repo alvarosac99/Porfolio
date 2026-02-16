@@ -5,17 +5,6 @@
     <div class="flex items-center justify-between gap-[60px] w-full">
         <!-- Left: Intro -->
         <div class="flex flex-col gap-6 items-start flex-1">
-            <!-- Badge -->
-            <div class="inline-flex items-center gap-2 px-3 py-1.5 border border-[var(--color-accent)] rounded w-auto">
-                <span class="w-2 h-2 rounded-full bg-[var(--color-accent)]"></span>
-                <span class="font-mono text-xs text-[var(--color-accent)]">disponible para trabajar</span>
-            </div>
-
-            <!-- Prompt -->
-            <p class="font-mono text-[var(--color-accent)] text-xl">
-                &gt; hola mundo, soy
-            </p>
-
             <!-- Name -->
             <div class="space-y-0">
                 <h1 class="font-mono font-bold leading-[1.1] tracking-tight">
@@ -26,66 +15,51 @@
 
             <!-- Description -->
             <p class="font-body text-[var(--color-text-muted)] text-base leading-[1.6] max-w-[520px]">
-                // desarrollador multiplataforma, apasionado por linux, docker, servidores y el desarrollo web. construyendo proyectos que importan.
+                // desarrollador multiplataforma, apasionado por linux, docker, servidores y el desarrollo web.
             </p>
 
             <!-- CTAs -->
             <div class="flex flex-wrap gap-4 pt-2">
-                <a href="#contact" class="flex items-center justify-center bg-[var(--color-accent)] text-[#0D0B0E] px-7 py-3.5 font-mono text-sm font-medium hover:opacity-90 transition-opacity">
-                    $ contactar
+                <a href="#projects" class="flex items-center justify-center bg-[var(--color-accent)] text-[#0D0B0E] px-7 py-3.5 font-mono text-sm font-medium hover:opacity-90 transition-opacity">
+                    $ ver_proyectos
                 </a>
-                <a href="#projects" class="flex items-center justify-center border border-[var(--color-stroke)] text-[var(--color-text-muted)] px-7 py-3.5 font-mono text-sm hover:border-[var(--color-text)] hover:text-[var(--color-text)] transition-colors">
-                    ver_proyectos
+                <a href="/cv" class="flex items-center justify-center border border-[var(--color-stroke)] text-[var(--color-text)] px-7 py-3.5 font-mono text-sm hover:border-[var(--color-text)] hover:text-[var(--color-text)] transition-colors">
+                    $ descargar_cv
                 </a>
             </div>
         </div>
 
         <!-- Right: Terminal -->
         <div class="w-[420px] h-[380px] flex-shrink-0">
-            <div class="bg-[var(--color-surface)] border border-[var(--color-stroke-secondary)] rounded overflow-hidden w-full h-full flex flex-col shadow-2xl">
+            <div class="bg-[var(--color-surface)] border border-[var(--color-stroke-secondary)] overflow-hidden w-full h-full flex flex-col shadow-2xl">
                 <!-- Header -->
                 <div class="bg-[var(--color-surface-dark)] px-4 h-[36px] border-b border-[var(--color-stroke-secondary)] flex items-center gap-2">
                     <div class="flex gap-2 mr-auto">
                         <div class="w-2.5 h-2.5 rounded-full bg-[#EF4444]"></div>
                         <div class="w-2.5 h-2.5 rounded-full bg-[#F59E0B]"></div>
-                        <div class="w-2.5 h-2.5 rounded-full bg-[var(--color-accent-secondary)]"></div>
+                        <div class="w-2.5 h-2.5 rounded-full bg-[#10B981]"></div>
                     </div>
-                    <div class="text-[var(--color-text-muted-secondary)] text-xs font-mono">~/sebas/portfolio</div>
+                    <div class="text-[var(--color-text-muted-secondary)] text-xs font-mono">  ~/sebas/portfolio</div>
                 </div>
 
                 <!-- Body -->
                 <div class="p-5 space-y-1.5 font-mono text-[13px] flex-1 flex flex-col">
                     <!-- Cmd 1 -->
-                    <div class="flex gap-2">
-                        <span class="text-[var(--color-accent)]">$</span>
-                        <span class="text-[var(--color-accent)]">whoami</span>
-                    </div>
-                    <div class="text-[var(--color-text)] pb-2.5">álvaro sebastián acosta</div>
+                    <div class="text-[var(--color-accent)]">$ whoami</div>
+                    <div class="text-[var(--color-text)] font-body pb-2.5">sebas</div>
 
                     <!-- Cmd 2 -->
-                    <div class="flex gap-2">
-                        <span class="text-[var(--color-accent)]">$</span>
-                        <span class="text-[var(--color-accent)]">cat about.txt</span>
-                    </div>
-                    <div class="text-[var(--color-text)] pb-2.5">desarrollador dam | consultor ti @ castroalonso</div>
+                    <div class="text-[var(--color-accent)]">$ cat about.txt</div>
+                    <div class="text-[var(--color-text)] font-body pb-2.5 max-w-[370px]">desarrollador | consultor ti @ castroalonso</div>
 
                     <!-- Cmd 3 -->
-                    <div class="flex gap-2">
-                        <span class="text-[var(--color-accent)]">$</span>
-                        <span class="text-[var(--color-accent)]">ls skills/</span>
-                    </div>
-                    <div class="grid grid-cols-1 gap-1 text-[#22D3EE] pb-2.5">
-                        <span>python  django  php  react  sql  docker</span>
-                        <span>linux   servers  hardware  devops</span>
-                    </div>
+                    <div class="text-[var(--color-accent)]">$ ls skills/</div>
+                    <div class="text-[#06B6D4] font-body max-w-[370px]">java  python  django  react  sql  docker</div>
+                    <div class="text-[#06B6D4] font-body pb-2.5 max-w-[370px]">linux  cloudflare  mantenimiento  soporte</div>
 
                     <!-- Cmd 4 -->
-                    <div class="flex gap-2">
-                        <span class="text-[var(--color-accent)]">$</span>
-                        <span class="text-[var(--color-accent)]">uptime</span>
-                    </div>
-                    <div class="text-[var(--color-text)]">ubicación: oviedo, asturias</div>
-                    <div class="text-[var(--color-text)] pb-2.5">estado: [activo] trabajando en castroalonso</div>
+                    <div class="text-[var(--color-accent)]">$ uptime</div>
+                    <div class="text-[var(--color-text)] font-body pb-2.5">ubicación: oviedo, asturias</div>
 
                     <!-- Cursor -->
                     <div class="flex gap-2 mt-auto pt-2">

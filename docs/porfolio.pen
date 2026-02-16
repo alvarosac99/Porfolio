@@ -2962,51 +2962,6 @@
               "gap": 24,
               "children": [
                 {
-                  "type": "frame",
-                  "id": "WteVx",
-                  "name": "heroBadge",
-                  "stroke": {
-                    "thickness": 1,
-                    "fill": "#FF7A42"
-                  },
-                  "gap": 8,
-                  "padding": [
-                    6,
-                    12
-                  ],
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "type": "ellipse",
-                      "id": "CTL3i",
-                      "name": "badgeDot",
-                      "fill": "#FF7A42",
-                      "width": 8,
-                      "height": 8
-                    },
-                    {
-                      "type": "text",
-                      "id": "DVAHL",
-                      "name": "badgeText",
-                      "fill": "#FF7A42",
-                      "content": "disponible para trabajar",
-                      "fontFamily": "JetBrains Mono",
-                      "fontSize": 12,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "text",
-                  "id": "O2n8X",
-                  "name": "heroPrompt",
-                  "fill": "#FF7A42",
-                  "content": "> hola mundo, soy",
-                  "fontFamily": "JetBrains Mono",
-                  "fontSize": 20,
-                  "fontWeight": "normal"
-                },
-                {
                   "type": "text",
                   "id": "uYrV2",
                   "name": "heroName",
@@ -3035,7 +2990,7 @@
                   "fill": "#AE9EA8",
                   "textGrowth": "fixed-width",
                   "width": 520,
-                  "content": "// desarrollador multiplataforma, apasionado por linux, docker, servidores y el desarrollo web. construyendo proyectos que importan.",
+                  "content": "// desarrollador multiplataforma, apasionado por linux, docker, servidores y el desarrollo web.",
                   "lineHeight": 1.6,
                   "fontFamily": "IBM Plex Mono",
                   "fontSize": 16,
@@ -3196,7 +3151,7 @@
                       "id": "qT23V",
                       "name": "tl2",
                       "fill": "#FAFAFA",
-                      "content": "álvaro sebastián acosta",
+                      "content": "sebas",
                       "fontFamily": "IBM Plex Mono",
                       "fontSize": 13,
                       "fontWeight": "normal"
@@ -3224,10 +3179,11 @@
                       "type": "text",
                       "id": "RISlY",
                       "name": "tl5",
+                      "rotation": 0.042437751595922925,
                       "fill": "#FAFAFA",
                       "textGrowth": "fixed-width",
                       "width": 370,
-                      "content": "desarrollador dam | consultor ti @ castroalonso",
+                      "content": "desarrollador | consultor ti @ castroalonso",
                       "fontFamily": "IBM Plex Mono",
                       "fontSize": 13,
                       "fontWeight": "normal"
@@ -3258,7 +3214,7 @@
                       "fill": "#06B6D4",
                       "textGrowth": "fixed-width",
                       "width": 370,
-                      "content": "python  django  php  react  sql  docker",
+                      "content": "java  python  django  react  sql  docker",
                       "fontFamily": "IBM Plex Mono",
                       "fontSize": 13,
                       "fontWeight": "normal"
@@ -3270,7 +3226,7 @@
                       "fill": "#06B6D4",
                       "textGrowth": "fixed-width",
                       "width": 370,
-                      "content": "linux   servers  hardware  devops",
+                      "content": "linux  cloudflare  mantenimiento  soporte",
                       "fontFamily": "IBM Plex Mono",
                       "fontSize": 13,
                       "fontWeight": "normal"
@@ -3306,18 +3262,6 @@
                     },
                     {
                       "type": "text",
-                      "id": "47c18",
-                      "name": "tl13",
-                      "fill": "#FAFAFA",
-                      "textGrowth": "fixed-width",
-                      "width": 370,
-                      "content": "estado: [activo] trabajando en castroalonso",
-                      "fontFamily": "IBM Plex Mono",
-                      "fontSize": 13,
-                      "fontWeight": "normal"
-                    },
-                    {
-                      "type": "text",
                       "id": "kF4RD",
                       "name": "tl14",
                       "fill": "#0F0F0F",
@@ -3346,6 +3290,7 @@
           "id": "09kYp",
           "name": "Stats Section",
           "width": "fill_container",
+          "height": 316,
           "layout": "vertical",
           "gap": 32,
           "padding": [
@@ -5105,7 +5050,7 @@
                       "fill": "#FFF5F0",
                       "textGrowth": "fixed-width",
                       "width": "fill_container",
-                      "content": "desarrollo de aplicaciones multiplataforma",
+                      "content": "Desarrollo de Aplicaciones Multiplataforma",
                       "lineHeight": 1.3,
                       "fontFamily": "JetBrains Mono",
                       "fontSize": 16,
@@ -5116,7 +5061,7 @@
                       "id": "ZhPot",
                       "name": "edu1School",
                       "fill": "#AE9EA8",
-                      "content": "i.e.s. pérez de ayala, oviedo",
+                      "content": "I.E.S. Doctor Fleming, Oviedo",
                       "fontFamily": "IBM Plex Mono",
                       "fontSize": 13,
                       "fontWeight": "normal"
@@ -5151,7 +5096,7 @@
                       "id": "74dX1",
                       "name": "edu2Title",
                       "fill": "#FFF5F0",
-                      "content": "bachillerato",
+                      "content": "Bachillerato de Humanidades",
                       "fontFamily": "JetBrains Mono",
                       "fontSize": 16,
                       "fontWeight": "bold"
@@ -5161,7 +5106,7 @@
                       "id": "u5uY9",
                       "name": "edu2School",
                       "fill": "#AE9EA8",
-                      "content": "i.e.s. doctor fleming, oviedo",
+                      "content": "I.E.S. Pérez de Ayala, Oviedo",
                       "fontFamily": "IBM Plex Mono",
                       "fontSize": 13,
                       "fontWeight": "normal"
@@ -5259,16 +5204,6 @@
                   ]
                 }
               ]
-            },
-            {
-              "type": "text",
-              "id": "K2Zsk",
-              "name": "contactEmail",
-              "fill": "#AE9EA8",
-              "content": "acostacortizasalvarosebastian@gmail.com",
-              "fontFamily": "IBM Plex Mono",
-              "fontSize": 13,
-              "fontWeight": "normal"
             }
           ]
         },
@@ -5358,6 +5293,8 @@
                       "name": "linksCol1",
                       "layout": "vertical",
                       "gap": 12,
+                      "justifyContent": "center",
+                      "alignItems": "end",
                       "children": [
                         {
                           "type": "text",
@@ -5374,7 +5311,7 @@
                           "id": "CcntL",
                           "name": "link1",
                           "fill": "#FF7A42",
-                          "content": "github.com/sebas",
+                          "content": "github.com/alvarosac99",
                           "fontFamily": "IBM Plex Mono",
                           "fontSize": 12,
                           "fontWeight": "normal"
@@ -5384,17 +5321,7 @@
                           "id": "d90fZ",
                           "name": "link2",
                           "fill": "#FF7A42",
-                          "content": "linkedin.com/in/sebas",
-                          "fontFamily": "IBM Plex Mono",
-                          "fontSize": 12,
-                          "fontWeight": "normal"
-                        },
-                        {
-                          "type": "text",
-                          "id": "q0ej2",
-                          "name": "link3",
-                          "fill": "#FF7A42",
-                          "content": "twitter.com/sebas",
+                          "content": "linkedin.com/in/sebastián-acosta-cortizas",
                           "fontFamily": "IBM Plex Mono",
                           "fontSize": 12,
                           "fontWeight": "normal"
@@ -5407,6 +5334,7 @@
                       "name": "linksCol2",
                       "layout": "vertical",
                       "gap": 12,
+                      "alignItems": "center",
                       "children": [
                         {
                           "type": "text",
@@ -5420,20 +5348,10 @@
                         },
                         {
                           "type": "text",
-                          "id": "dZg1q",
-                          "name": "link4",
-                          "fill": "#A855F7",
-                          "content": "mi_vps.sebas.dev",
-                          "fontFamily": "IBM Plex Mono",
-                          "fontSize": 12,
-                          "fontWeight": "normal"
-                        },
-                        {
-                          "type": "text",
                           "id": "kLITO",
                           "name": "link5",
                           "fill": "#A855F7",
-                          "content": "games.sebas.dev",
+                          "content": "games.zenithseed.dev",
                           "fontFamily": "IBM Plex Mono",
                           "fontSize": 12,
                           "fontWeight": "normal"
@@ -5443,7 +5361,7 @@
                           "id": "80Itv",
                           "name": "link6",
                           "fill": "#A855F7",
-                          "content": "mc.sebas.dev",
+                          "content": "mc.zenithseed.dev",
                           "fontFamily": "IBM Plex Mono",
                           "fontSize": 12,
                           "fontWeight": "normal"
@@ -5508,7 +5426,7 @@
                   "id": "ZDy57",
                   "name": "footerCopy",
                   "fill": "#7D6E77",
-                  "content": "© 2025 sebas acosta. all rights reserved.",
+                  "content": "© 2026 all rights reserved.",
                   "fontFamily": "IBM Plex Mono",
                   "fontSize": 11,
                   "fontWeight": "normal"

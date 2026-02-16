@@ -14,59 +14,62 @@
     </div>
 
     <div class="flex flex-col gap-6">
-        <!-- Row 1: Full Width Project -->
-        <a href="/projects/games" class="block w-full border border-[var(--color-stroke)] group hover:border-[var(--color-accent)] transition-colors bg-transparent">
-            <div class="h-[300px] w-full bg-[var(--color-surface)] relative overflow-hidden flex items-center justify-center border-b border-[var(--color-stroke)] group-hover:border-[var(--color-accent)]/50 transition-colors">
+        <!-- Row 1: Full Width Project - Games -->
+        <div class="w-full border border-[var(--color-stroke)] group hover:border-[var(--color-accent)] transition-colors bg-transparent">
+            <div class="h-[200px] w-full bg-[var(--color-surface)] relative overflow-hidden flex items-center justify-center border-b border-[var(--color-stroke)] group-hover:border-[var(--color-accent)]/50 transition-colors">
                 <span class="font-mono text-2xl text-[var(--color-text-muted)] group-hover:text-[var(--color-accent)] transition-colors">
                     [games_platform.jpg]
                 </span>
             </div>
             <div class="p-6 flex flex-col gap-3">
-                <div class="flex justify-between items-start">
-                    <h3 class="font-mono font-bold text-xl text-[var(--color-text)] mb-0 group-hover:text-[var(--color-accent)] transition-colors">games_platform</h3>
-                    <span class="font-mono text-xs text-[var(--color-accent)] border border-[var(--color-accent)] px-2 py-0.5 rounded">v1.0.0</span>
-                </div>
-                <p class="font-body text-sm text-[var(--color-text-muted)] leading-relaxed">plataforma web de videojuegos. proyecto final de grado superior en dam. gestión de usuarios, catálogo y reseñas.</p>
+                <span class="font-mono text-[28px] font-bold text-[var(--color-accent)]">01</span>
+                <h3 class="font-mono font-bold text-base text-[var(--color-text)]">games/ — proyecto fin de curso</h3>
+                <p class="font-body text-[13px] text-[var(--color-text-muted)] leading-[1.5] max-w-[480px]">plataforma web de videojuegos. proyecto final de grado superior en dam. desarrollo completo fullstack con gestión de usuarios y catálogo.</p>
                 <div class="flex gap-2 mt-2">
-                    <span class="text-[11px] font-mono text-[var(--color-accent)] bg-[var(--color-accent)]/10 px-2 py-1 rounded">Java</span>
-                    <span class="text-[11px] font-mono text-[var(--color-accent)] bg-[var(--color-accent)]/10 px-2 py-1 rounded">Spring Boot</span>
-                    <span class="text-[11px] font-mono text-[var(--color-accent)] bg-[var(--color-accent)]/10 px-2 py-1 rounded">React</span>
+                    <span class="text-[11px] font-mono text-[#A855F7]">[react]</span>
+                    <span class="text-[11px] font-mono text-[var(--color-accent)]">[django]</span>
+                    <span class="text-[11px] font-mono text-[#F472B6]">[python]</span>
+                    <span class="text-[11px] font-mono text-[#A855F7]">[sql]</span>
                 </div>
             </div>
-        </a>
+        </div>
 
         <!-- Row 2: Split Grid -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            <!-- Left Project -->
-            <div class="border border-[var(--color-stroke)] group hover:border-[var(--color-accent)] transition-colors bg-transparent flex flex-col">
-                <div class="h-[240px] w-full bg-[var(--color-surface)] relative overflow-hidden flex-shrink-0 flex items-center justify-center border-b border-[var(--color-stroke)] group-hover:border-[var(--color-accent)]/50 transition-colors">
+            <!-- Left Project - Servidor VPS -->
+            <div class="border border-[var(--color-stroke)] group hover:border-[var(--color-accent)] transition-colors bg-transparent flex flex-col h-[476px]">
+                <div class="h-[200px] w-full bg-[var(--color-surface)] relative overflow-hidden flex-shrink-0 flex items-center justify-center border-b border-[var(--color-stroke)] group-hover:border-[var(--color-accent)]/50 transition-colors">
                     <span class="font-mono text-xl text-[var(--color-text-muted)] group-hover:text-[var(--color-accent)] transition-colors">
-                        [ecommerce_preview.jpg]
+                        [servidor_vps.jpg]
                     </span>
                 </div>
                 <div class="p-6 flex flex-col gap-3 flex-grow">
-                    <h3 class="font-mono font-bold text-xl text-[var(--color-text)] mb-0 group-hover:text-[var(--color-accent)] transition-colors">ecommerce_beta</h3>
-                    <p class="font-body text-sm text-[var(--color-text-muted)] leading-relaxed">tienda online completa con pasarela de pagos stripe.</p>
+                    <span class="font-mono text-[28px] font-bold text-[var(--color-accent)]">02</span>
+                    <h3 class="font-mono font-bold text-base text-[var(--color-text)]">servidor vps/</h3>
+                    <p class="font-body text-[13px] text-[var(--color-text-muted)] leading-[1.5] max-w-[240px]">servidor privado virtual configurado desde cero con linux. hosting de aplicaciones web, servidor de minecraft y otros servicios.</p>
                     <div class="flex gap-2 mt-auto">
-                        <span class="text-[11px] font-mono text-[var(--color-accent)] bg-[var(--color-accent)]/10 px-2 py-1 rounded">Next.js</span>
-                        <span class="text-[11px] font-mono text-[var(--color-accent)] bg-[var(--color-accent)]/10 px-2 py-1 rounded">Stripe</span>
+                        <span class="text-[11px] font-mono text-[var(--color-accent)]">[linux]</span>
+                        <span class="text-[11px] font-mono text-[var(--color-accent)]">[docker]</span>
+                        <span class="text-[11px] font-mono text-[#A855F7]">[nginx]</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Right Project -->
+            <!-- Right Project - Minecraft Server -->
             <div class="border border-[var(--color-stroke)] group hover:border-[var(--color-accent)] transition-colors bg-transparent flex flex-col">
-                <div class="h-[240px] w-full bg-[var(--color-surface)] relative overflow-hidden flex-shrink-0 flex items-center justify-center border-b border-[var(--color-stroke)] group-hover:border-[var(--color-accent)]/50 transition-colors">
+                <div class="h-[200px] w-full bg-[var(--color-surface)] relative overflow-hidden flex-shrink-0 flex items-center justify-center border-b border-[var(--color-stroke)] group-hover:border-[var(--color-accent)]/50 transition-colors">
                     <span class="font-mono text-xl text-[var(--color-text-muted)] group-hover:text-[var(--color-accent)] transition-colors">
-                        [dashboard_preview.jpg]
+                        [minecraft_server.jpg]
                     </span>
                 </div>
                 <div class="p-6 flex flex-col gap-3 flex-grow">
-                    <h3 class="font-mono font-bold text-xl text-[var(--color-text)] mb-0 group-hover:text-[var(--color-accent)] transition-colors">dev_dashboard</h3>
-                    <p class="font-body text-sm text-[var(--color-text-muted)] leading-relaxed">dashboard analítico para desarrolladores con métricas en tiempo real.</p>
+                    <span class="font-mono text-[28px] font-bold text-[var(--color-accent)]">03</span>
+                    <h3 class="font-mono font-bold text-base text-[var(--color-text)]">minecraft_server/</h3>
+                    <p class="font-body text-[13px] text-[var(--color-text-muted)] leading-[1.5] max-w-[240px]">servidor de minecraft desplegado en el vps. configuración completa de plugins, optimización de rendimiento y gestión de comunidad.</p>
                     <div class="flex gap-2 mt-auto">
-                        <span class="text-[11px] font-mono text-[var(--color-accent)] bg-[var(--color-accent)]/10 px-2 py-1 rounded">Vue.js</span>
-                        <span class="text-[11px] font-mono text-[var(--color-accent)] bg-[var(--color-accent)]/10 px-2 py-1 rounded">Firebase</span>
+                        <span class="text-[11px] font-mono text-[#A855F7]">[java]</span>
+                        <span class="text-[11px] font-mono text-[var(--color-accent)]">[vps]</span>
+                        <span class="text-[11px] font-mono text-[#F472B6]">[plugins]</span>
                     </div>
                 </div>
             </div>
