@@ -6,15 +6,26 @@
 }
 
 :root {
-    /* Console Theme (Docs Style) Default */
+    /* Tema Favo - Console Theme Colors */
     --color-bg: #0C0C0C;
+    --color-bg-gradient-start: #0C0C0C;
+    --color-bg-gradient-end: #1A1520;
     --color-bg-sidebar: #0C0C0C;
-    --color-text: #FAFAFA;
-    --color-text-muted: #8B939F;
-    --color-accent: #00D4AA;
-    /* Mint Green */
-    --color-stroke: #1E2028;
-    --color-surface: #141418;
+    --color-text: #FFF5F0;
+    --color-text-primary: #FAFAFA;
+    --color-text-muted: #AE9EA8;
+    --color-text-muted-secondary: #8B939F;
+    --color-text-footer-muted: #7D6E77;
+    --color-text-title: #FFF8F2;
+    --color-accent: #FF7A42;
+    --color-accent-secondary: #00D4AA;
+    /* Mint Green for console theme */
+    --color-stroke: #3D3048;
+    --color-stroke-secondary: #2A2530;
+    --color-stroke-tertiary: #1E2028;
+    --color-surface: #141414;
+    --color-surface-dark: #0A0A0A;
+    --color-surface-footer: #1A1520;
 
     --font-mono: 'JetBrains Mono', monospace;
     --font-body: 'IBM Plex Mono', monospace;

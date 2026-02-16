@@ -1,8 +1,9 @@
 ---
-import ThemeSwitcher from '../ThemeSwitcher.astro';
+import ThemeTrigger from './ThemeTrigger.astro';
+import ThemeDropdown from './ThemeDropdown.astro';
 ---
 
-<header class="h-[72px] border-b border-[var(--color-stroke)] bg-[var(--color-bg)] sticky top-0 z-50 px-4 md:px-12 lg:px-[60px] flex items-center justify-between">
+<header class="h-[72px] border-b border-[var(--color-stroke)] bg-[var(--color-bg)] sticky top-0 z-50 px-[60px] flex items-center justify-between w-full">
     <!-- Logo -->
     <a href="/" class="flex items-center gap-3 group">
         <span class="font-mono font-bold text-2xl text-[var(--color-accent)]">&gt;</span>
@@ -21,19 +22,35 @@ import ThemeSwitcher from '../ThemeSwitcher.astro';
         </nav>
 
         <!-- CTA & Theme -->
-        <div class="flex items-center gap-4">
-            <a href="#contact" class="hidden md:flex items-center justify-center bg-[var(--color-accent)] px-5 py-2.5 hover:opacity-90 transition-opacity">
-                <span class="font-mono font-medium text-xs text-[#0A0A0A]">$ contactar</span>
+        <div class="hidden md:flex items-center gap-4">
+            <a href="#contact" class="flex items-center justify-center bg-[var(--color-accent)] px-5 py-2.5 hover:opacity-90 transition-opacity">
+                <span class="font-mono font-medium text-xs text-[#0D0B0E]">$ contactar</span>
             </a>
             
-            <div class="border-l border-[var(--color-stroke)] pl-4 h-6 flex items-center">
-                 <!-- Theme Trigger Placeholder (Simulation) -->
-                <button class="flex items-center gap-1.5 px-3 py-1.5 rounded bg-[#141418] border border-[var(--color-stroke)]">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#8B939F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5"/><palette class="lucide lucide-palette"/><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
-                    <!-- Icon replaced with simple palette for now -->
-                     <span class="font-mono text-[11px] text-[#8B939F]">console</span>
-                </button>
+            <div class="border-l border-[var(--color-stroke)] pl-4 h-6 flex items-center relative">
+                <ThemeTrigger />
+                <ThemeDropdown />
             </div>
         </div>
+
+        <!-- Mobile Menu Button -->
+        <button
+            id="mobile-menu-btn"
+            type="button"
+            class="inline-flex md:hidden items-center justify-center p-2 text-[var(--color-text)] hover:text-[var(--color-accent)] focus:outline-none transition-colors"
+            aria-label="Abrir menú"
+        >
+            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
     </div>
 </header>
+
+<script>
+    const btn = document.getElementById('mobile-menu-btn');
+    btn?.addEventListener('click', () => {
+        // Mobile menu functionality can be added here
+        console.log('Mobile menu clicked');
+    });
+</script>

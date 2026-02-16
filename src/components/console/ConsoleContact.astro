@@ -1,32 +1,40 @@
 ---
 ---
 
-<section id="contact" class="py-24 px-4 md:px-12 lg:px-[120px] max-w-7xl mx-auto w-full">
-    <div class="flex flex-col items-center text-center gap-8 w-full max-w-3xl mx-auto">
-        <!-- Header -->
-        <div class="flex items-center gap-3">
-            <span class="font-mono font-bold text-3xl text-[var(--color-accent)]">&gt;</span>
-            <span class="font-mono font-bold text-3xl text-[var(--color-accent)]">contacto</span>
-        </div>
+<section id="contact" class="py-20 px-[120px] w-full border-t border-[var(--color-stroke)]">
+    <div class="flex flex-col items-center gap-8 text-center">
+        <!-- Prompt -->
+        <p class="font-mono font-bold text-[32px] text-[var(--color-accent)]">
+            &gt; contacto
+        </p>
 
-        <!-- content -->
-        <h3 class="font-mono font-bold text-3xl md:text-5xl text-[var(--color-text)] text-center">
+        <!-- Headline -->
+        <h2 class="font-mono font-bold text-[40px] text-[var(--color-text)] leading-tight">
             ¿trabajamos juntos?
-        </h3>
+        </h2>
 
-        <p class="font-body text-[#8B939F] text-base leading-[1.6] max-w-[700px] text-center">
+        <!-- Description -->
+        <p class="font-body text-base text-[var(--color-text-muted)] leading-[1.6] max-w-[700px]">
             // siempre abierto a nuevas oportunidades, proyectos interesantes y colaboraciones. no dudes en contactarme.
         </p>
 
-        <!-- CTA -->
-        <div class="flex items-center gap-4 mt-2">
-            <a href="mailto:acostacortizasalvarosebastian@gmail.com" class="flex items-center justify-center bg-[var(--color-accent)] px-8 py-4 hover:opacity-90 transition-opacity gap-2">
-                <span class="font-mono font-medium text-sm text-[#0A0A0A]">$ enviar_email</span>
+        <!-- CTA Button -->
+        <div class="flex items-center gap-4">
+            <a 
+                href="mailto:acostacortizasalvarosebastian@gmail.com" 
+                class="flex items-center justify-center gap-2 bg-[var(--color-accent)] text-[#0D0B0E] px-8 py-4 font-mono text-sm font-medium hover:opacity-90 transition-opacity"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="16" x="2" y="4" rx="2"/>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                </svg>
+                enviar_email
             </a>
         </div>
 
-        <span class="font-mono text-xs md:text-[13px] text-[#8B939F] mt-2 break-all">
+        <!-- Email Address -->
+        <p class="font-body text-[13px] text-[var(--color-text-muted)]">
             acostacortizasalvarosebastian@gmail.com
-        </span>
+        </p>
     </div>
 </section>

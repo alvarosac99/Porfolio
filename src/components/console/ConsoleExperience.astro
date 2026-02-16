@@ -1,44 +1,66 @@
 ---
 ---
 
-<section id="experience" class="py-16 px-4 md:px-12 lg:px-[120px] max-w-7xl mx-auto w-full">
+<section id="experience" class="py-[60px] px-[120px] w-full border-t border-[var(--color-stroke)]">
     <!-- Header -->
-    <div class="flex items-center gap-3 mb-12">
-        <span class="font-mono font-bold text-3xl text-[var(--color-accent)]">&gt;</span>
+    <div class="flex items-center gap-3 mb-8">
+        <span class="font-mono font-bold text-[32px] text-[var(--color-accent)]">&gt;</span>
         <h2 class="font-mono font-bold text-[28px] text-[var(--color-text)]">experiencia</h2>
     </div>
 
-    <div class="flex flex-col gap-6">
-        <!-- Exp 1 (Active) -->
-        <div class="flex flex-col md:flex-row gap-6 p-6 border border-[var(--color-accent)] bg-[var(--color-accent)]/5 w-full">
-            <div class="md:w-[200px] flex-shrink-0 flex flex-col gap-1">
-                <span class="font-mono text-xs text-[var(--color-accent)] block">2023 - Presente</span>
-                <span class="font-mono text-sm font-bold text-[var(--color-text)]">Tech Solutions Inc.</span>
-            </div>
-            <div class="flex-grow flex flex-col gap-3">
-                <h3 class="font-mono font-bold text-lg text-[var(--color-accent)] mb-0">Senior Full Stack Developer</h3>
-                <p class="font-body text-sm text-[var(--color-text-muted)] leading-relaxed">
-                    Liderazgo técnico en proyectos de migración a arquitectura de microservicios. Implementación de CI/CD pipelines y mejora del rendimiento en aplicaciones React.
-                </p>
-                <div class="mt-0 flex flex-wrap gap-2">
-                     <span class="text-[10px] font-mono border border-[var(--color-accent)]/30 text-[var(--color-accent)] px-1.5 py-0.5">React</span>
-                     <span class="text-[10px] font-mono border border-[var(--color-accent)]/30 text-[var(--color-accent)] px-1.5 py-0.5">AWS</span>
+    <!-- Experience Items -->
+    <div class="flex flex-col gap-4">
+        <!-- Experience 1 (Active) -->
+        <div class="flex flex-col gap-6 p-6 border border-[var(--color-accent)]">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                <div class="flex flex-col gap-2">
+                    <h3 class="font-mono font-bold text-xl text-[var(--color-text)]">consultor TI</h3>
+                    <p class="font-mono text-sm text-[var(--color-accent)]">@ castroalonso</p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="font-mono text-xs text-[var(--color-text-muted)]">2023 - presente</span>
+                    <span class="px-2 py-1 bg-[var(--color-accent)]/10 border border-[var(--color-accent)] rounded font-mono text-[10px] text-[var(--color-accent)]">ACTUAL</span>
                 </div>
             </div>
+            <ul class="list-none space-y-2 font-body text-sm text-[var(--color-text-muted)] leading-relaxed">
+                <li class="flex gap-2">
+                    <span class="text-[var(--color-accent)] flex-shrink-0">→</span>
+                    <span>desarrollo y mantenimiento de aplicaciones web empresariales</span>
+                </li>
+                <li class="flex gap-2">
+                    <span class="text-[var(--color-accent)] flex-shrink-0">→</span>
+                    <span>gestión de servidores linux y contenedores docker</span>
+                </li>
+                <li class="flex gap-2">
+                    <span class="text-[var(--color-accent)] flex-shrink-0">→</span>
+                    <span>consultoría técnica y soporte a clientes</span>
+                </li>
+            </ul>
         </div>
 
-        <!-- Exp 2 -->
-        <div class="flex flex-col md:flex-row gap-6 p-6 border border-[#1E2028] hover:border-[#8B939F] transition-colors w-full">
-            <div class="md:w-[200px] flex-shrink-0 flex flex-col gap-1">
-                <span class="font-mono text-xs text-[#8B939F] block">2021 - 2023</span>
-                <span class="font-mono text-sm font-bold text-[#8B939F]">Digital Agency</span>
+        <!-- Experience 2 -->
+        <div class="flex flex-col gap-6 p-6 border border-[var(--color-stroke)] hover:border-[var(--color-accent)] transition-colors">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
+                <div class="flex flex-col gap-2">
+                    <h3 class="font-mono font-bold text-xl text-[var(--color-text)]">desarrollador fullstack</h3>
+                    <p class="font-mono text-sm text-[var(--color-accent)]">@ freelance</p>
+                </div>
+                <span class="font-mono text-xs text-[var(--color-text-muted)]">2021 - 2023</span>
             </div>
-            <div class="flex-grow flex flex-col gap-3">
-                <h3 class="font-mono font-bold text-lg text-[#FAFAFA] mb-0">Desarrollador Web Full Stack</h3>
-                <p class="font-body text-sm text-[#8B939F] leading-relaxed">
-                    Desarrollo de sitios e-commerce con Shopify y soluciones a medida usando MERN stack. Colaboración directa con clientes.
-                </p>
-            </div>
+            <ul class="list-none space-y-2 font-body text-sm text-[var(--color-text-muted)] leading-relaxed">
+                <li class="flex gap-2">
+                    <span class="text-[var(--color-accent)] flex-shrink-0">→</span>
+                    <span>desarrollo de aplicaciones web y móviles para diversos clientes</span>
+                </li>
+                <li class="flex gap-2">
+                    <span class="text-[var(--color-accent)] flex-shrink-0">→</span>
+                    <span>implementación de apis rest y microservicios</span>
+                </li>
+                <li class="flex gap-2">
+                    <span class="text-[var(--color-accent)] flex-shrink-0">→</span>
+                    <span>diseño y desarrollo de interfaces de usuario modernas</span>
+                </li>
+            </ul>
         </div>
     </div>
 </section>

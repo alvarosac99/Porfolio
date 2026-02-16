@@ -1,33 +1,32 @@
 ---
 ---
 
-<section id="projects" class="py-16 px-4 md:px-12 lg:px-[120px] max-w-7xl mx-auto w-full">
+<section id="projects" class="py-[60px] px-[120px] w-full border-t border-[var(--color-stroke)]">
     <!-- Header -->
-    <div class="flex flex-col gap-3 mb-8">
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3 mb-8">
         <div class="flex items-center gap-3">
-            <span class="font-mono font-bold text-3xl text-[var(--color-accent)]">&gt;</span>
+            <span class="font-mono font-bold text-[32px] text-[var(--color-accent)]">&gt;</span>
             <h2 class="font-mono font-bold text-[28px] text-[var(--color-text)]">proyectos</h2>
         </div>
-        <p class="font-mono text-xs text-[var(--color-accent)] pl-1">
-            $ ls -la ~/proyectos/
+        <p class="font-mono text-xs text-[var(--color-accent)]">
+            $ ls ~/proyectos/
         </p>
     </div>
 
     <div class="flex flex-col gap-6">
-        <!-- Row 1: Full Width Project (Proj 4 - Games/Consola) -->
-        <a href="/projects/games" class="block w-full border border-[#1E2028] group hover:border-[var(--color-accent)] transition-colors bg-[var(--color-bg)]">
-            <div class="h-[300px] w-full bg-[#141414] relative overflow-hidden flex items-center justify-center border-b border-[#1E2028] group-hover:border-[var(--color-accent)]/50 transition-colors">
-                <!-- Placeholder for Image -->
+        <!-- Row 1: Full Width Project -->
+        <a href="/projects/games" class="block w-full border border-[var(--color-stroke)] group hover:border-[var(--color-accent)] transition-colors bg-transparent">
+            <div class="h-[300px] w-full bg-[var(--color-surface)] relative overflow-hidden flex items-center justify-center border-b border-[var(--color-stroke)] group-hover:border-[var(--color-accent)]/50 transition-colors">
                 <span class="font-mono text-2xl text-[var(--color-text-muted)] group-hover:text-[var(--color-accent)] transition-colors">
-                    [Preview: Games Platform]
+                    [games_platform.jpg]
                 </span>
             </div>
             <div class="p-6 flex flex-col gap-3">
                 <div class="flex justify-between items-start">
-                    <h3 class="font-mono font-bold text-xl text-[var(--color-text)] mb-0 group-hover:text-[var(--color-accent)] transition-colors">Games Platform</h3>
+                    <h3 class="font-mono font-bold text-xl text-[var(--color-text)] mb-0 group-hover:text-[var(--color-accent)] transition-colors">games_platform</h3>
                     <span class="font-mono text-xs text-[var(--color-accent)] border border-[var(--color-accent)] px-2 py-0.5 rounded">v1.0.0</span>
                 </div>
-                <p class="font-body text-sm text-[var(--color-text-muted)]">Plataforma web de videojuegos. Proyecto final de grado superior en DAM. Gestión de usuarios, catálogo y reseñas.</p>
+                <p class="font-body text-sm text-[var(--color-text-muted)] leading-relaxed">plataforma web de videojuegos. proyecto final de grado superior en dam. gestión de usuarios, catálogo y reseñas.</p>
                 <div class="flex gap-2 mt-2">
                     <span class="text-[11px] font-mono text-[var(--color-accent)] bg-[var(--color-accent)]/10 px-2 py-1 rounded">Java</span>
                     <span class="text-[11px] font-mono text-[var(--color-accent)] bg-[var(--color-accent)]/10 px-2 py-1 rounded">Spring Boot</span>
@@ -38,34 +37,34 @@
 
         <!-- Row 2: Split Grid -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            <!-- Proj 1 -->
-            <div class="border border-[#1E2028] group hover:border-[var(--color-accent)] transition-colors bg-[var(--color-bg)] flex flex-col">
-                <div class="h-[240px] w-full bg-[#141414] relative overflow-hidden flex-shrink-0 flex items-center justify-center border-b border-[#1E2028] group-hover:border-[var(--color-accent)]/50 transition-colors">
-                     <span class="font-mono text-xl text-[var(--color-text-muted)] group-hover:text-[var(--color-accent)] transition-colors">
-                        [Preview: E-Commerce]
+            <!-- Left Project -->
+            <div class="border border-[var(--color-stroke)] group hover:border-[var(--color-accent)] transition-colors bg-transparent flex flex-col">
+                <div class="h-[240px] w-full bg-[var(--color-surface)] relative overflow-hidden flex-shrink-0 flex items-center justify-center border-b border-[var(--color-stroke)] group-hover:border-[var(--color-accent)]/50 transition-colors">
+                    <span class="font-mono text-xl text-[var(--color-text-muted)] group-hover:text-[var(--color-accent)] transition-colors">
+                        [ecommerce_preview.jpg]
                     </span>
                 </div>
                 <div class="p-6 flex flex-col gap-3 flex-grow">
-                    <h3 class="font-mono font-bold text-xl text-[var(--color-text)] mb-0 group-hover:text-[var(--color-accent)] transition-colors">E-Commerce_Beta</h3>
-                    <p class="font-body text-sm text-[var(--color-text-muted)]">Tienda online completa con pasarela de pagos Stripe.</p>
-                     <div class="flex gap-2 mt-auto">
+                    <h3 class="font-mono font-bold text-xl text-[var(--color-text)] mb-0 group-hover:text-[var(--color-accent)] transition-colors">ecommerce_beta</h3>
+                    <p class="font-body text-sm text-[var(--color-text-muted)] leading-relaxed">tienda online completa con pasarela de pagos stripe.</p>
+                    <div class="flex gap-2 mt-auto">
                         <span class="text-[11px] font-mono text-[var(--color-accent)] bg-[var(--color-accent)]/10 px-2 py-1 rounded">Next.js</span>
                         <span class="text-[11px] font-mono text-[var(--color-accent)] bg-[var(--color-accent)]/10 px-2 py-1 rounded">Stripe</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Proj 2 -->
-            <div class="border border-[#1E2028] group hover:border-[var(--color-accent)] transition-colors bg-[var(--color-bg)] flex flex-col">
-                <div class="h-[240px] w-full bg-[#141414] relative overflow-hidden flex-shrink-0 flex items-center justify-center border-b border-[#1E2028] group-hover:border-[var(--color-accent)]/50 transition-colors">
-                     <span class="font-mono text-xl text-[var(--color-text-muted)] group-hover:text-[var(--color-accent)] transition-colors">
-                        [Preview: Dashboard]
+            <!-- Right Project -->
+            <div class="border border-[var(--color-stroke)] group hover:border-[var(--color-accent)] transition-colors bg-transparent flex flex-col">
+                <div class="h-[240px] w-full bg-[var(--color-surface)] relative overflow-hidden flex-shrink-0 flex items-center justify-center border-b border-[var(--color-stroke)] group-hover:border-[var(--color-accent)]/50 transition-colors">
+                    <span class="font-mono text-xl text-[var(--color-text-muted)] group-hover:text-[var(--color-accent)] transition-colors">
+                        [dashboard_preview.jpg]
                     </span>
                 </div>
                 <div class="p-6 flex flex-col gap-3 flex-grow">
-                    <h3 class="font-mono font-bold text-xl text-[var(--color-text)] mb-0 group-hover:text-[var(--color-accent)] transition-colors">Dev_Dashboard</h3>
-                    <p class="font-body text-sm text-[var(--color-text-muted)]">Dashboard analítico para desarrolladores.</p>
-                     <div class="flex gap-2 mt-auto">
+                    <h3 class="font-mono font-bold text-xl text-[var(--color-text)] mb-0 group-hover:text-[var(--color-accent)] transition-colors">dev_dashboard</h3>
+                    <p class="font-body text-sm text-[var(--color-text-muted)] leading-relaxed">dashboard analítico para desarrolladores con métricas en tiempo real.</p>
+                    <div class="flex gap-2 mt-auto">
                         <span class="text-[11px] font-mono text-[var(--color-accent)] bg-[var(--color-accent)]/10 px-2 py-1 rounded">Vue.js</span>
                         <span class="text-[11px] font-mono text-[var(--color-accent)] bg-[var(--color-accent)]/10 px-2 py-1 rounded">Firebase</span>
                     </div>

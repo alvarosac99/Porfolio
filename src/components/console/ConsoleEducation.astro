@@ -1,26 +1,54 @@
 ---
 ---
 
-<section id="education" class="py-16 px-4 md:px-12 lg:px-[120px] max-w-7xl mx-auto w-full">
+<section id="education" class="py-[60px] px-[120px] w-full border-t border-[var(--color-stroke)]">
     <!-- Header -->
-    <div class="flex items-center gap-3 mb-12">
-        <span class="font-mono font-bold text-3xl text-[var(--color-accent)]">&gt;</span>
+    <div class="flex items-center gap-3 mb-8">
+        <span class="font-mono font-bold text-[32px] text-[var(--color-accent)]">&gt;</span>
         <h2 class="font-mono font-bold text-[28px] text-[var(--color-text)]">educación</h2>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <!-- Edu 1 (Active/Highlighted) -->
-        <div class="p-6 border border-[var(--color-accent)] bg-[var(--color-accent)]/5 flex flex-col gap-4">
-            <span class="font-mono text-xs text-[var(--color-accent)]">[grado superior]</span>
-            <h3 class="font-mono font-bold text-base md:text-lg text-[var(--color-text)] leading-[1.3] max-w-full">desarrollo de aplicaciones multiplataforma</h3>
-            <span class="font-mono text-xs md:text-[13px] text-[#8B939F]">i.e.s. pérez de ayala, oviedo</span>
+    <!-- Education Cards -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <!-- Education 1 (Active/Featured) -->
+        <div class="flex flex-col gap-4 p-6 border border-[var(--color-accent)]">
+            <div class="flex flex-col gap-1">
+                <h3 class="font-mono font-bold text-lg text-[var(--color-text)]">desarrollo de aplicaciones multiplataforma</h3>
+                <p class="font-mono text-sm text-[var(--color-accent)]">@ ies monte naranco</p>
+            </div>
+            <div class="flex items-center gap-2">
+                <span class="font-mono text-xs text-[var(--color-text-muted)]">2020 - 2022</span>
+                <span class="px-2 py-1 bg-[var(--color-accent)]/10 border border-[var(--color-accent)] rounded font-mono text-[10px] text-[var(--color-accent)]">GRADO SUPERIOR</span>
+            </div>
+            <p class="font-body text-sm text-[var(--color-text-muted)] leading-relaxed">
+                ciclo formativo de grado superior. desarrollo de aplicaciones multiplataforma para dispositivos móviles, web y escritorio.
+            </p>
+            <div class="flex flex-wrap gap-2 mt-2">
+                <span class="px-2 py-1 bg-[var(--color-accent)]/10 rounded font-mono text-[10px] text-[var(--color-text)]">Java</span>
+                <span class="px-2 py-1 bg-[var(--color-accent)]/10 rounded font-mono text-[10px] text-[var(--color-text)]">Android</span>
+                <span class="px-2 py-1 bg-[var(--color-accent)]/10 rounded font-mono text-[10px] text-[var(--color-text)]">SQL</span>
+                <span class="px-2 py-1 bg-[var(--color-accent)]/10 rounded font-mono text-[10px] text-[var(--color-text)]">Spring</span>
+            </div>
         </div>
 
-        <!-- Edu 2 -->
-        <div class="p-6 border border-[#1E2028] hover:border-[#8B939F] transition-colors flex flex-col gap-4 bg-[var(--color-bg)]">
-            <span class="font-mono text-xs text-[#8B939F]">[bachillerato]</span>
-            <h3 class="font-mono font-bold text-base md:text-lg text-[var(--color-text)] leading-tight">bachillerato científico-tecnológico</h3>
-            <span class="font-mono text-xs md:text-[13px] text-[#8B939F]">i.e.s. doctor fleming, oviedo</span>
+        <!-- Education 2 -->
+        <div class="flex flex-col gap-4 p-6 border border-[var(--color-stroke)] hover:border-[var(--color-accent)] transition-colors">
+            <div class="flex flex-col gap-1">
+                <h3 class="font-mono font-bold text-lg text-[var(--color-text)]">sistemas microinformáticos y redes</h3>
+                <p class="font-mono text-sm text-[var(--color-accent)]">@ ies monte naranco</p>
+            </div>
+            <div class="flex items-center gap-2">
+                <span class="font-mono text-xs text-[var(--color-text-muted)]">2018 - 2020</span>
+                <span class="px-2 py-1 bg-[var(--color-stroke)] rounded font-mono text-[10px] text-[var(--color-text-muted)]">GRADO MEDIO</span>
+            </div>
+            <p class="font-body text-sm text-[var(--color-text-muted)] leading-relaxed">
+                ciclo formativo de grado medio. administración de sistemas, redes y hardware. mantenimiento y soporte técnico.
+            </p>
+            <div class="flex flex-wrap gap-2 mt-2">
+                <span class="px-2 py-1 bg-[var(--color-accent)]/10 rounded font-mono text-[10px] text-[var(--color-text)]">Linux</span>
+                <span class="px-2 py-1 bg-[var(--color-accent)]/10 rounded font-mono text-[10px] text-[var(--color-text)]">Windows Server</span>
+                <span class="px-2 py-1 bg-[var(--color-accent)]/10 rounded font-mono text-[10px] text-[var(--color-text)]">Redes</span>
+            </div>
         </div>
     </div>
 </section>

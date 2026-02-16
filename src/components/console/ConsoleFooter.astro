@@ -1,43 +1,53 @@
 ---
 ---
 
-<footer class="bg-[#141418] border-t border-[#1E2028] py-12 px-4 md:px-12 lg:px-[120px] mt-auto w-full">
-    <div class="max-w-7xl mx-auto w-full flex flex-col md:flex-row justify-between items-start gap-12">
-        
-        <!-- Brand -->
-        <div class="flex flex-col gap-3">
-            <div class="flex items-center gap-3">
-                 <a href="#" class="flex items-center gap-3 group">
-                    <span class="font-mono font-bold text-2xl text-[var(--color-accent)]">&gt;</span>
-                    <span class="font-mono font-medium text-lg text-[var(--color-text)]">sebas</span>
-                </a>
+<footer class="bg-[var(--color-surface-footer)] border-t border-[var(--color-stroke)] py-12 px-[120px] w-full">
+        <div class="flex flex-col gap-8">
+            <!-- Top Section -->
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-8">
+                <!-- Brand -->
+                <div class="flex flex-col gap-3">
+                    <div class="flex items-center gap-3">
+                        <span class="font-mono font-bold text-2xl text-[var(--color-accent)]">&gt;</span>
+                        <span class="font-mono font-medium text-lg text-[var(--color-text)]">sebas</span>
+                    </div>
+                    <p class="font-body text-sm text-[var(--color-text-muted)] max-w-xs">
+                        desarrollador multiplataforma construyendo el futuro, una línea de código a la vez.
+                    </p>
+                </div>
+
+                <!-- Links -->
+                <div class="flex flex-wrap gap-12 md:gap-[60px]">
+                    <!-- Navigation -->
+                    <div class="flex flex-col gap-3">
+                        <h3 class="font-mono font-bold text-sm text-[var(--color-text)] mb-1">navegación</h3>
+                        <a href="#about" class="font-mono text-xs text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors">sobre_mí</a>
+                        <a href="#projects" class="font-mono text-xs text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors">proyectos</a>
+                        <a href="#experience" class="font-mono text-xs text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors">experiencia</a>
+                        <a href="#skills" class="font-mono text-xs text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors">aptitudes</a>
+                    </div>
+
+                    <!-- Social -->
+                    <div class="flex flex-col gap-3">
+                        <h3 class="font-mono font-bold text-sm text-[var(--color-text)] mb-1">social</h3>
+                        <a href="https://github.com/alvarosac99" target="_blank" rel="noopener" class="font-mono text-xs text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors">github</a>
+                        <a href="https://linkedin.com/in/alvarosac" target="_blank" rel="noopener" class="font-mono text-xs text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors">linkedin</a>
+                        <a href="mailto:acostacortizasalvarosebastian@gmail.com" class="font-mono text-xs text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors">email</a>
+                    </div>
+
+                    <!-- Contact -->
+                    <div class="flex flex-col gap-3">
+                        <h3 class="font-mono font-bold text-sm text-[var(--color-text)] mb-1">contacto</h3>
+                        <a href="#contact" class="font-mono text-xs text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors">trabajemos_juntos</a>
+                    </div>
+                </div>
             </div>
-            <p class="font-body text-xs text-[#8B939F]">
-                // desarrollador · consultor ti · creador
-            </p>
+
+            <!-- Bottom Bar -->
+            <div class="flex items-center justify-between pt-4 border-t border-[var(--color-stroke)]">
+                <p class="font-body text-[11px] text-[var(--color-text-footer-muted)]">
+                    © 2025 sebas acosta. all rights reserved.
+                </p>
+            </div>
         </div>
-
-        <!-- Links -->
-        <div class="flex flex-wrap gap-8 md:gap-12 lg:gap-[60px] font-mono text-xs text-[#8B939F]">
-            <div class="flex flex-col gap-3">
-                <a href="#about" class="hover:text-[var(--color-text)] transition-colors">sobre_mí</a>
-                <a href="#projects" class="hover:text-[var(--color-text)] transition-colors">proyectos</a>
-            </div>
-             <div class="flex flex-col gap-3">
-                <a href="#experience" class="hover:text-[var(--color-text)] transition-colors">experiencia</a>
-                <a href="#contact" class="hover:text-[var(--color-text)] transition-colors">contacto</a>
-            </div>
-             <div class="flex flex-col gap-3">
-                <a href="https://github.com" target="_blank" class="hover:text-[var(--color-text)] transition-colors">github</a>
-                <a href="https://linkedin.com" target="_blank" class="hover:text-[var(--color-text)] transition-colors">linkedin</a>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="max-w-7xl mx-auto w-full mt-8 pt-4 border-t border-[#1E2028] flex justify-between items-center">
-        <p class="font-body text-[11px] text-[#555555]">
-            © 2025 sebas acosta. all rights reserved.
-        </p>
-    </div>
 </footer>

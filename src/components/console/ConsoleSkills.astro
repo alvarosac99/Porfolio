@@ -1,78 +1,78 @@
 ---
 ---
 
-<section id="skills" class="py-16 px-4 md:px-12 lg:px-[120px] max-w-7xl mx-auto w-full">
+<section id="skills" class="py-[60px] px-[120px] w-full border-t border-[var(--color-stroke)]">
     <!-- Header -->
-    <div class="flex items-center gap-3 mb-12">
-        <span class="font-mono font-bold text-3xl text-[var(--color-accent)]">&gt;</span>
+    <div class="flex items-center gap-3 mb-8">
+        <span class="font-mono font-bold text-[32px] text-[var(--color-accent)]">&gt;</span>
         <h2 class="font-mono font-bold text-[28px] text-[var(--color-text)]">aptitudes</h2>
     </div>
 
-    <div class="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-8 md:gap-12">
-        <!-- Col 1: Technical Skills -->
-        <div class="flex flex-col gap-6">
-            <h3 class="font-mono text-xs text-[var(--color-text)] mb-0">// técnicas</h3>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                 <!-- Backend Box -->
-                <div class="p-6 border border-[#1E2028] hover:border-[var(--color-accent)] transition-colors flex flex-col gap-4 bg-[var(--color-bg)]">
-                    <h4 class="font-mono font-bold text-base text-[var(--color-text)] mb-0">Backend & Systems</h4>
-                    <ul class="space-y-2 text-sm font-mono text-[#8B939F]">
-                        <li><span class="text-[var(--color-accent)]">▹</span> Python (Django/FastAPI)</li>
-                        <li><span class="text-[var(--color-accent)]">▹</span> Node.js / Express</li>
-                        <li><span class="text-[var(--color-accent)]">▹</span> PostgreSQL / MongoDB</li>
-                        <li><span class="text-[var(--color-accent)]">▹</span> Docker / Kubernetes</li>
-                    </ul>
+    <!-- Skills Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-[624px_1fr] gap-6">
+        <!-- Left Column -->
+        <div class="flex flex-col gap-4">
+            <!-- Backend Development -->
+            <div class="flex flex-col gap-4 p-6 border border-[var(--color-stroke)] hover:border-[var(--color-accent)] transition-colors">
+                <div class="flex items-center gap-2">
+                    <span class="font-mono font-bold text-lg text-[var(--color-text)]">backend_dev</span>
+                    <div class="h-px flex-1 bg-[var(--color-stroke)]"></div>
                 </div>
-
-                <!-- Frontend Box -->
-                <div class="p-6 border border-[#1E2028] hover:border-[var(--color-accent)] transition-colors flex flex-col gap-4 bg-[var(--color-bg)]">
-                    <h4 class="font-mono font-bold text-base text-[var(--color-text)] mb-0">Frontend</h4>
-                    <ul class="space-y-2 text-sm font-mono text-[#8B939F]">
-                        <li><span class="text-[var(--color-accent)]">▹</span> React / Next.js</li>
-                        <li><span class="text-[var(--color-accent)]">▹</span> Astro</li>
-                        <li><span class="text-[var(--color-accent)]">▹</span> TailwindCSS</li>
-                        <li><span class="text-[var(--color-accent)]">▹</span> TypeScript</li>
-                    </ul>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1.5 bg-[var(--color-accent)]/10 border border-[var(--color-accent)]/30 rounded font-mono text-xs text-[var(--color-text)]">Python</span>
+                    <span class="px-3 py-1.5 bg-[var(--color-accent)]/10 border border-[var(--color-accent)]/30 rounded font-mono text-xs text-[var(--color-text)]">Java</span>
+                    <span class="px-3 py-1.5 bg-[var(--color-accent)]/10 border border-[var(--color-accent)]/30 rounded font-mono text-xs text-[var(--color-text)]">PHP</span>
+                    <span class="px-3 py-1.5 bg-[var(--color-accent)]/10 border border-[var(--color-accent)]/30 rounded font-mono text-xs text-[var(--color-text)]">Django</span>
+                    <span class="px-3 py-1.5 bg-[var(--color-accent)]/10 border border-[var(--color-accent)]/30 rounded font-mono text-xs text-[var(--color-text)]">Spring Boot</span>
+                    <span class="px-3 py-1.5 bg-[var(--color-accent)]/10 border border-[var(--color-accent)]/30 rounded font-mono text-xs text-[var(--color-text)]">Node.js</span>
                 </div>
+            </div>
 
-                 <!-- Tools Box (Full width in col) -->
-                <div class="p-6 border border-[#1E2028] hover:border-[var(--color-accent)] transition-colors md:col-span-2 flex flex-col gap-4 bg-[var(--color-bg)]">
-                    <h4 class="font-mono font-bold text-base text-[var(--color-text)] mb-0">Herramientas & DevOps</h4>
-                    <div class="flex flex-wrap gap-3">
-                        <span class="px-2 py-1 bg-[#141418] border border-[#1E2028] text-xs font-mono text-[#8B939F]">Git</span>
-                        <span class="px-2 py-1 bg-[#141418] border border-[#1E2028] text-xs font-mono text-[#8B939F]">Linux</span>
-                        <span class="px-2 py-1 bg-[#141418] border border-[#1E2028] text-xs font-mono text-[#8B939F]">AWS</span>
-                        <span class="px-2 py-1 bg-[#141418] border border-[#1E2028] text-xs font-mono text-[#8B939F]">Figma</span>
-                        <span class="px-2 py-1 bg-[#141418] border border-[#1E2028] text-xs font-mono text-[#8B939F]">CI/CD</span>
-                    </div>
+            <!-- Frontend Development -->
+            <div class="flex flex-col gap-4 p-6 border border-[var(--color-stroke)] hover:border-[var(--color-accent)] transition-colors">
+                <div class="flex items-center gap-2">
+                    <span class="font-mono font-bold text-lg text-[var(--color-text)]">frontend_dev</span>
+                    <div class="h-px flex-1 bg-[var(--color-stroke)]"></div>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1.5 bg-[var(--color-accent)]/10 border border-[var(--color-accent)]/30 rounded font-mono text-xs text-[var(--color-text)]">React</span>
+                    <span class="px-3 py-1.5 bg-[var(--color-accent)]/10 border border-[var(--color-accent)]/30 rounded font-mono text-xs text-[var(--color-text)]">Vue.js</span>
+                    <span class="px-3 py-1.5 bg-[var(--color-accent)]/10 border border-[var(--color-accent)]/30 rounded font-mono text-xs text-[var(--color-text)]">Next.js</span>
+                    <span class="px-3 py-1.5 bg-[var(--color-accent)]/10 border border-[var(--color-accent)]/30 rounded font-mono text-xs text-[var(--color-text)]">TypeScript</span>
+                    <span class="px-3 py-1.5 bg-[var(--color-accent)]/10 border border-[var(--color-accent)]/30 rounded font-mono text-xs text-[var(--color-text)]">Tailwind CSS</span>
                 </div>
             </div>
         </div>
 
-        <!-- Col 2: Personal Skills -->
-        <div class="flex flex-col gap-6">
-            <h3 class="font-mono text-xs text-[var(--color-text)] mb-0">// personales</h3>
-             
-            <div class="p-6 border border-[#1E2028] hover:border-[var(--color-accent)] transition-colors h-full flex flex-col gap-4 bg-[var(--color-bg)]">
-                <ul class="space-y-4 text-sm font-mono text-[#8B939F]">
-                    <li class="flex items-start gap-2">
-                        <span class="text-[var(--color-accent)]">▹</span>
-                        <span>Comunicación efectiva</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <span class="text-[var(--color-accent)]">▹</span>
-                        <span>Trabajo en equipo</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <span class="text-[var(--color-accent)]">▹</span>
-                        <span>Resolución de problemas</span>
-                    </li>
-                    <li class="flex items-start gap-2">
-                        <span class="text-[var(--color-accent)]">▹</span>
-                        <span>Adaptabilidad</span>
-                    </li>
-                </ul>
+        <!-- Right Column -->
+        <div class="flex flex-col gap-4">
+            <!-- DevOps & Infrastructure -->
+            <div class="flex flex-col gap-4 p-6 border border-[var(--color-stroke)] hover:border-[var(--color-accent)] transition-colors">
+                <div class="flex items-center gap-2">
+                    <span class="font-mono font-bold text-lg text-[var(--color-text)]">devops</span>
+                    <div class="h-px flex-1 bg-[var(--color-stroke)]"></div>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1.5 bg-[var(--color-accent)]/10 border border-[var(--color-accent)]/30 rounded font-mono text-xs text-[var(--color-text)]">Docker</span>
+                    <span class="px-3 py-1.5 bg-[var(--color-accent)]/10 border border-[var(--color-accent)]/30 rounded font-mono text-xs text-[var(--color-text)]">Linux</span>
+                    <span class="px-3 py-1.5 bg-[var(--color-accent)]/10 border border-[var(--color-accent)]/30 rounded font-mono text-xs text-[var(--color-text)]">Git</span>
+                    <span class="px-3 py-1.5 bg-[var(--color-accent)]/10 border border-[var(--color-accent)]/30 rounded font-mono text-xs text-[var(--color-text)]">CI/CD</span>
+                    <span class="px-3 py-1.5 bg-[var(--color-accent)]/10 border border-[var(--color-accent)]/30 rounded font-mono text-xs text-[var(--color-text)]">Nginx</span>
+                </div>
+            </div>
+
+            <!-- Databases -->
+            <div class="flex flex-col gap-4 p-6 border border-[var(--color-stroke)] hover:border-[var(--color-accent)] transition-colors">
+                <div class="flex items-center gap-2">
+                    <span class="font-mono font-bold text-lg text-[var(--color-text)]">databases</span>
+                    <div class="h-px flex-1 bg-[var(--color-stroke)]"></div>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1.5 bg-[var(--color-accent)]/10 border border-[var(--color-accent)]/30 rounded font-mono text-xs text-[var(--color-text)]">PostgreSQL</span>
+                    <span class="px-3 py-1.5 bg-[var(--color-accent)]/10 border border-[var(--color-accent)]/30 rounded font-mono text-xs text-[var(--color-text)]">MySQL</span>
+                    <span class="px-3 py-1.5 bg-[var(--color-accent)]/10 border border-[var(--color-accent)]/30 rounded font-mono text-xs text-[var(--color-text)]">MongoDB</span>
+                    <span class="px-3 py-1.5 bg-[var(--color-accent)]/10 border border-[var(--color-accent)]/30 rounded font-mono text-xs text-[var(--color-text)]">Redis</span>
+                </div>
             </div>
         </div>
     </div>
