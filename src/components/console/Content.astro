@@ -1,0 +1,108 @@
+---
+---
+
+<div class="w-full max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 px-4 md:px-12 lg:px-[120px] py-12 flex-grow">
+    <!-- Sidebar (Sticky on Desktop) -->
+    <aside class="hidden lg:block w-[200px] flex-shrink-0">
+        <div class="sticky top-[100px] flex flex-col gap-1">
+            <span class="font-mono text-[11px] text-[#555555] mb-2">// contenido</span>
+            <div class="h-px bg-[var(--color-stroke)] w-full mb-1"></div>
+            
+            <a href="#descripción" class="font-mono text-xs font-medium text-[var(--color-accent)] py-1">descripción</a>
+            <a href="#características" class="font-mono text-xs text-[#8B939F] hover:text-[var(--color-text)] transition-colors py-1">características</a>
+            <a href="#instalación" class="font-mono text-xs text-[#8B939F] hover:text-[var(--color-text)] transition-colors py-1">instalación</a>
+            <a href="#uso" class="font-mono text-xs text-[#8B939F] hover:text-[var(--color-text)] transition-colors py-1">uso</a>
+            <a href="#capturas" class="font-mono text-xs text-[#8B939F] hover:text-[var(--color-text)] transition-colors py-1">capturas</a>
+            <a href="#licencia" class="font-mono text-xs text-[#8B939F] hover:text-[var(--color-text)] transition-colors py-1">licencia</a>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="w-full flex-grow flex flex-col gap-12">
+        <!-- Sec: Descripción -->
+        <section id="descripción" class="flex flex-col gap-4">
+            <div class="flex flex-col gap-2">
+                <h2 class="font-mono text-2xl font-bold text-[var(--color-text)]"># Descripción</h2>
+                 <div class="h-px bg-[var(--color-stroke)] w-full"></div>
+            </div>
+            <div class="space-y-4 text-sm font-body text-[#C8CCD4] leading-relaxed">
+                <p>
+                    Games es una plataforma web de videojuegos desarrollada como proyecto final del grado superior en Desarrollo de Aplicaciones Multiplataforma (DAM). La aplicación permite a los usuarios explorar un catálogo completo de videojuegos, gestionar sus colecciones personales, escribir reseñas y conectar con otros jugadores.
+                </p>
+                <p>
+                    El proyecto demuestra una arquitectura fullstack moderna, con un backend robusto en Spring Boot y un frontend interactivo en React, todo orquestado con Docker para facilitar el despliegue.
+                </p>
+            </div>
+        </section>
+
+        <!-- Sec: Características (Placeholder) -->
+        <section id="características" class="flex flex-col gap-4">
+             <div class="flex flex-col gap-2">
+                <h2 class="font-mono text-2xl font-bold text-[var(--color-text)]"># Características</h2>
+                 <div class="h-px bg-[var(--color-stroke)] w-full"></div>
+            </div>
+            <ul class="list-none space-y-2 text-sm font-body text-[#C8CCD4]">
+                <li class="flex gap-2"><span class="text-[var(--color-accent)]">-</span> Gestión de usuarios y roles (Admin/User)</li>
+                <li class="flex gap-2"><span class="text-[var(--color-accent)]">-</span> Catálogo paginado con filtros avanzados</li>
+                <li class="flex gap-2"><span class="text-[var(--color-accent)]">-</span> Sistema de reseñas y valoraciones</li>
+                <li class="flex gap-2"><span class="text-[var(--color-accent)]">-</span> Panel de administración para gestión de contenido</li>
+            </ul>
+        </section>
+
+        <!-- Sec: Instalación -->
+        <section id="instalación" class="flex flex-col gap-4">
+            <div class="flex flex-col gap-2">
+                <h2 class="font-mono text-2xl font-bold text-[var(--color-text)]"># Instalación</h2>
+                 <div class="h-px bg-[var(--color-stroke)] w-full"></div>
+            </div>
+            <p class="text-sm font-body text-[#C8CCD4] leading-relaxed">
+                Clona el repositorio y levanta los servicios con Docker:
+            </p>
+            <div class="bg-[#141418] border border-[var(--color-stroke)] rounded-lg p-4 font-mono text-sm overflow-x-auto">
+                <div class="flex gap-2 text-[#8B939F] mb-1">
+                    <span class="text-[var(--color-accent)]">$</span>
+                    <span>git clone https://github.com/sebas/games.git</span>
+                </div>
+                <div class="flex gap-2 text-[#8B939F] mb-1">
+                     <span class="text-[var(--color-accent)]">$</span>
+                    <span>cd games</span>
+                </div>
+                 <div class="flex gap-2 text-[#8B939F]">
+                     <span class="text-[var(--color-accent)]">$</span>
+                    <span>docker-compose up -d</span>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sec: Capturas (Placeholder) -->
+        <section id="capturas" class="flex flex-col gap-4">
+             <div class="flex flex-col gap-2">
+                <h2 class="font-mono text-2xl font-bold text-[var(--color-text)]"># Capturas</h2>
+                 <div class="h-px bg-[var(--color-stroke)] w-full"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="aspect-video bg-[#141418] border border-[var(--color-stroke)] flex items-center justify-center text-[#8B939F] text-xs font-mono">
+                    [Dashboad_Admin.png]
+                </div>
+                <div class="aspect-video bg-[#141418] border border-[var(--color-stroke)] flex items-center justify-center text-[#8B939F] text-xs font-mono">
+                    [Catalogo_View.png]
+                </div>
+            </div>
+        </section>
+
+        <!-- Sec: Licencia -->
+        <section id="licencia" class="flex flex-col gap-4">
+             <div class="flex flex-col gap-2">
+                <h2 class="font-mono text-2xl font-bold text-[var(--color-text)]"># Licencia</h2>
+                 <div class="h-px bg-[var(--color-stroke)] w-full"></div>
+            </div>
+            <p class="text-sm font-body text-[#C8CCD4] leading-relaxed">
+                Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
+            </p>
+             <div class="inline-flex items-center gap-2 px-4 py-2 bg-[#141418] border border-[var(--color-stroke)] rounded-md w-fit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8B939F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <span class="font-mono text-sm text-[#8B939F]">MIT License</span>
+            </div>
+        </section>
+    </main>
+</div>

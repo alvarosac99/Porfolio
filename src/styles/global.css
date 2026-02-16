@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+    --font-mono: 'JetBrains Mono', monospace;
+    --font-body: 'IBM Plex Mono', monospace;
+}
+
+:root {
+    /* Console Theme (Docs Style) Default */
+    --color-bg: #0C0C0C;
+    --color-bg-sidebar: #0C0C0C;
+    --color-text: #FAFAFA;
+    --color-text-muted: #8B939F;
+    --color-accent: #00D4AA;
+    /* Mint Green */
+    --color-stroke: #1E2028;
+    --color-surface: #141418;
+
+    --font-mono: 'JetBrains Mono', monospace;
+    --font-body: 'IBM Plex Mono', monospace;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-mono);
+}
+
+/* Scrollbar Style for Console Theme */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-stroke);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-accent);
+}

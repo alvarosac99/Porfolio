@@ -1,0 +1,94 @@
+---
+---
+
+<section id="hero" class="min-h-[calc(100vh-72px)] flex items-center justify-center py-20 px-4 md:px-12 lg:px-[120px] max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center w-full">
+        <!-- Left: Intro -->
+        <div class="flex flex-col gap-6 items-start w-full order-2 lg:order-1">
+             <!-- Badge -->
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 border border-[var(--color-accent)] rounded-full w-auto">
+                <span class="w-2 h-2 rounded-full bg-[var(--color-accent)]"></span>
+                <span class="font-mono text-xs text-[var(--color-accent)]">disponible para trabajar</span>
+            </div>
+
+            <div class="space-y-1">
+                <p class="font-mono text-[var(--color-accent)] text-xl">
+                    &gt; hola, soy
+                </p>
+                <h1 class="font-mono font-bold leading-[1.1] tracking-tight">
+                    <span class="text-[var(--color-text)] text-4xl md:text-5xl lg:text-[56px] block">Álvaro Sebastián</span>
+                    <span class="text-[var(--color-accent)] text-4xl md:text-5xl lg:text-[56px] block">Acosta</span>
+                </h1>
+            </div>
+
+            <p class="font-body text-[var(--color-text-muted)] text-base leading-relaxed max-w-[520px]">
+                // desarrollador multiplataforma, apasionado por linux, docker, servidores y el desarrollo web. construyendo proyectos que importan.
+            </p>
+
+            <div class="flex flex-wrap gap-4 pt-2">
+                <a href="#contact" class="flex items-center justify-center bg-[var(--color-accent)] text-[#0A0A0A] px-7 py-3.5 font-mono text-sm font-medium hover:opacity-90 transition-opacity">
+                    $ contactar
+                </a>
+                <a href="#projects" class="flex items-center justify-center border border-[var(--color-stroke)] text-[var(--color-text-muted)] px-7 py-3.5 font-mono text-sm hover:border-[var(--color-text)] hover:text-[var(--color-text)] transition-colors">
+                    ver_proyectos
+                </a>
+            </div>
+        </div>
+
+        <!-- Right: Terminal -->
+        <div class="w-full max-w-[420px] mx-auto lg:ml-auto order-1 lg:order-2">
+            <div class="bg-[#141414] border border-[#1E2028] rounded overflow-hidden w-full shadow-2xl">
+                 <!-- Header -->
+                <div class="bg-[#0C0C0C] px-4 py-2 border-b border-[#1E2028] flex items-center gap-2 h-9">
+                    <div class="flex gap-2 mr-auto">
+                        <div class="w-2.5 h-2.5 rounded-full bg-[#EF4444]"></div>
+                        <div class="w-2.5 h-2.5 rounded-full bg-[#F59E0B]"></div>
+                        <div class="w-2.5 h-2.5 rounded-full bg-[var(--color-accent)]"></div>
+                    </div>
+                    <div class="text-[var(--color-text-muted)] text-xs font-mono">~/sebas/portfolio</div>
+                </div>
+
+                <!-- Body -->
+                <div class="p-5 space-y-1.5 font-mono text-[13px] min-h-[340px] flex flex-col">
+                    <!-- Cmd 1 -->
+                    <div class="flex gap-2">
+                        <span class="text-[var(--color-accent)]">$</span>
+                        <span class="text-[var(--color-accent)]">whoami</span>
+                    </div>
+                    <div class="text-[var(--color-text)] pb-2.5">álvaro sebastián acosta</div>
+
+                    <!-- Cmd 2 -->
+                    <div class="flex gap-2">
+                        <span class="text-[var(--color-accent)]">$</span>
+                        <span class="text-[var(--color-accent)]">cat about.txt</span>
+                    </div>
+                    <div class="text-[var(--color-text)] pb-2.5">desarrollador dam | consultor ti @ castroalonso</div>
+
+                    <!-- Cmd 3 -->
+                    <div class="flex gap-2">
+                        <span class="text-[var(--color-accent)]">$</span>
+                        <span class="text-[var(--color-accent)]">ls skills/</span>
+                    </div>
+                    <div class="grid grid-cols-1 gap-1 text-[#22D3EE] pb-2.5">
+                        <span>python  django  php  react  sql  docker</span>
+                        <span>linux   servers  hardware  devops</span>
+                    </div>
+
+                    <!-- Cmd 4 -->
+                    <div class="flex gap-2">
+                        <span class="text-[var(--color-accent)]">$</span>
+                        <span class="text-[var(--color-accent)]">uptime</span>
+                    </div>
+                    <div class="text-[var(--color-text)]">ubicación: oviedo, asturias</div>
+                    <div class="text-[var(--color-text)] pb-2.5">estado: [activo] trabajando en castroalonso</div>
+
+                     <!-- Cursor -->
+                    <div class="flex gap-2 mt-auto pt-2">
+                        <span class="text-[var(--color-accent)]">&gt;</span>
+                        <span class="text-[var(--color-accent)] animate-pulse">_</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
