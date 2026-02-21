@@ -8,6 +8,7 @@
     const ctx = canvas.getContext('2d')!;
 
     // ── Config ──
+    // ── Config ──
     const PARTICLE_COUNT = 80;
     const CONNECTION_RADIUS = 120;
     const ATTRACTION_RADIUS = 180;
@@ -18,9 +19,46 @@
     const LINE_OPACITY = 0.4;
     const MIN_SIZE = 2;
     const MAX_SIZE = 10;
-    const COLOR_IDLE = [107, 95, 101];     // #6B5F65
-    const COLOR_ACTIVE = [255, 122, 66];   // #FF7A42
-    const COLOR_LINES = [232, 97, 42];     // #E8612A
+    
+    // Default colors (will be overwritten by theme)
+    let COLOR_IDLE = [107, 95, 101];     // #6B5F65
+    let COLOR_ACTIVE = [255, 122, 66];   // #FF7A42
+    let COLOR_LINES = [232, 97, 42];     // #E8612A
+
+    // ── Theme Helpers ──
+    function hexToRgb(hex: string): [number, number, number] {
+        // Expand shorthand form (e.g. "03F") to full form (e.g. "0033FF")
+        const shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
+        hex = hex.replace(shorthandRegex, (m, r, g, b) => {
+            return r + r + g + g + b + b;
+        });
+
+        const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+        return result ? [
+            parseInt(result[1], 16),
+            parseInt(result[2], 16),
+            parseInt(result[3], 16)
+        ] : [0, 0, 0];
+    }
+
+    function getThemeColor(variable: string): string {
+        return getComputedStyle(document.documentElement).getPropertyValue(variable).trim();
+    }
+
+    function updateThemeColors() {
+        const accent = getThemeColor('--color-accent');
+        const textMuted = getThemeColor('--color-text-muted');
+        
+        if (accent) {
+            const rgbAccent = hexToRgb(accent);
+            COLOR_ACTIVE = rgbAccent;
+            COLOR_LINES = rgbAccent;
+        }
+        
+        if (textMuted) {
+            COLOR_IDLE = hexToRgb(textMuted);
+        }
+    }
 
     // ── Simple Perlin noise ──
     const perm: number[] = [];
@@ -384,5 +422,22 @@
     // ── Init ──
     resize();
     createParticles();
+    
+    // Initialize theme colors
+    updateThemeColors();
+
+    // Watch for theme changes
+    const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+            if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
+                updateThemeColors();
+            }
+        });
+    });
+
+    observer.observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['data-theme']
+    });
     requestAnimationFrame(animate);
 </script>
